@@ -24,14 +24,14 @@ public class OrdenaUsuarios {
 
 		// ordena usuarios por ordem alfabetica
 		usuarios.sort((u1, u2) -> u1.getNome().compareTo(u2.getNome()));
+		
+        usuarios.forEach(System.out::println);
 
-		System.out.println("Usuarios:");
-		usuarios.forEach(u -> System.out.println(u.getNome()));
+		List<String> usuarios2 = Arrays.asList("Rafael", "Sergio", "Bruno", "Rodrigo");
 
-		List<String> usuarios2 = Arrays.asList("Rafael", "Pedro", "Paulo", "Rodrigo");
-
-		// ordena usuarios por ordem alfabetica
+	  //ordena usuarios por ordem alfabetica
 		usuarios2.sort(Comparator.naturalOrder());
+	  //usuarios2.sort(String.CASE_INSENSITIVE_ORDER);
 
 		System.out.println("Usuarios2:");
 		System.out.println(usuarios2);

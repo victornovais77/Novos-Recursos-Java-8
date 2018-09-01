@@ -29,7 +29,7 @@ public class Usuario {
 	}
 	
 	public String toString() {
-		return "Usuario " + this.nome;
+		return "Usuario: " + this.nome + ", Pontos:" + this.pontos;
 	}
 	
 }
